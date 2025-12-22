@@ -93,7 +93,7 @@ body {
     display: block;
     margin: 0 2rem;
     border-radius: 5px;
-    box-shadow: 0 -5px 20px rgba(190, 132, 166, 0.877);
+    box-shadow: 0 -5px 20px rgba(190, 135, 167, 0.877);
     float: right;  
     margin-top: 12px;
 }
@@ -107,3 +107,4 @@ body {
     font-size: 20px;
     line-height: 1.5;
 }
+
