@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4acac9a;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header { 
+    position: fixed;
+    background-color: rgb(209, 150, 150);
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(221, 148, 148); 
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.header nav ul li {
+    margin: 0 15px;      
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #000;        
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.team-container-h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: #0a0a0a;
+    padding-top: 15%;
+    margin-bottom: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team {
+    color: #a57d7dee;
+    margin: 0 20px 0;
+}
+
+.team-container-h2 {
+    display: flex;
+    justify-content: center;
+    color: #0a0a0a;
+    font-size: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 30px; /* space between team members */
+}
+
+.team-member {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* centers content inside each member */
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.role {
+    color: #ff385c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Responsive: adjust team member width on smaller screens */
+@media (max-width: 900px) {
+    .team-member {
+        width: 45%; /* 2 per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .team-member {
+        width: 90%; /* 1 per row on mobile */
+    }
+
+    .team-container-h1 {
+        font-size: 50px;
+        padding-top: 20%;
+    }
+
+    .team-container-h2 {
+        font-size: 28px;
+    }
+}
+
+
+.role {
+    color: #ff385c;
+    font-weight: bold;
+}
