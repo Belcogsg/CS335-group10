@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Luxury OASIS Homes</title>
+    <link rel="stylesheet" href="../swe1.css">
+    <link rel="stylesheet" href="faqs.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About Us</a></li>
+                <li><a href="../index.html#photos">Gallery</a></li>
+                <li><a href="../index.html#serv">Services</a></li>
+                <li><a href="../index.html#price">Pricing</a></li>
+                <li><a href="../index.html#team">Our Team</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="../index.html#reviews">Reviews</a></li>
+                <li><a href="../index.html#cont">Contact Us</a></li>
+                <li><a href="../index.html#sign" style="background: #a57d7dee; color: white; border-radius: 5px;">GET STARTED</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="faq-section">
+        <h1 class="faq-title">Frequently Asked <span class="oasis">Questions</span></h1>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Where is Oasis located exactly?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Oasis is situated in a prime coastal area of Dar es Salaam, Tanzania, approximately 45 minutes from Masaki. It offers a perfect blend of winery views and ocean breezes.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How many guests can the property accommodate?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>The home comfortably sleeps up to 8 guests across three luxury bedrooms. We can provide additional bedding upon request for larger families.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is there on-site security?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, your safety is our priority. The property features 24/7 private security and is located within a gated, high-end residential perimeter.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What are the prices for services in the Luxury Homes?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>The prices are affordable ranging from as low as 100,000Tanzanian shillings.Check the
+                    <a href="#"> Pricing </a> section of this website to view more about prices.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script>
+        const questions = document.querySelectorAll(".faq-question");
+        questions.forEach(question => {
+            question.addEventListener("click", () => {
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
