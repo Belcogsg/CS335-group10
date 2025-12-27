@@ -8,6 +8,18 @@ The application consists of:
 -Nine additional HTML pages each created by a different group member
 -All pages are linked from the landing page
 
+##Group members
+-Belva (leader): Landing page 
+-Eliud: About Us
+-: Gallery
+-Swalha: Services
+-Khadija: Pricing
+-Rebecca: Our Team
+-Chrispin: FAQs
+-Catherine: Reviews
+-Jolyine: Contact Us
+-Edgar: Get Started
+
 ##Repo Setup
 -The repo is public
 -The main branch is MASTER
@@ -34,6 +46,9 @@ The application consists of:
 -Commit  only your own work eg git add team.html git commit -m"Add team.html page"
 -Push your branch to the repo, don't commit directly to the MASTER branch. git push origin your-branch-name
 -DO NOT MODIFY OTHER MEMBERS' HTML FILES.
+-USE UNIQUE CLASS NAMES FOR YOUR SECTION. I RECOMMEND TO PREFIX THE PAGE NAME BEFORE THE CLASS TO AVOID CONFLICTS eg.
+.pricing-grid
+.gallery-grid  etc.
 
 ##Tools used
 -HTML
