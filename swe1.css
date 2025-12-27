@@ -106,4 +106,165 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+
 }
+
+
+/* Get Started */
+.get-started {
+  padding: 8% 5%;
+  background: linear-gradient(
+    rgba(224, 175, 175, 0.85),
+    rgba(212, 172, 172, 0.9)
+  );
+  text-align: center;
+}
+
+.get-started-container h2 {
+  font-size: 50px;
+  padding-top: 5%;
+  margin-bottom: 20px;
+  font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.get-started-container h2 span {
+  color: #7a4e4e;
+}
+
+.get-started-container p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.get-started-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #f5e1e1;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #a57d7d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #7a4e4e;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: #f5e1e1;
+  width: 90%;
+  max-width: 500px;
+  margin: 8% auto;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #a57d7d;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7a4e4e;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: darkred;
+  margin-bottom: 15px;
+}
+
