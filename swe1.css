@@ -436,6 +436,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     font-family: Arial, sans-serif;
+    color: #000;
 }
 
 .faq-question:hover {
