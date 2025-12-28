@@ -10,6 +10,52 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.header { 
+    position: fixed;
+    background-color: rgb(209, 150, 150);
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(221, 148, 148); 
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.header nav ul li {
+    margin: 0 15px;      
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #000;        
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
 /* .sign-up {
     background-color: rgb(235, 169, 169);
     border-radius: 15px;
@@ -62,17 +108,15 @@ body {
     font-size: 20px;
     line-height: 1.5;
 }
-
-
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, rgb(209, 150, 150) 0%);
-            padding: 1rem 0;
-            box-shadow: 0px 0px 10px rgb(221, 148, 148);;
+/* pricing styles */
+ .site-header {
+            background: linear-gradient(135deg,  rgb(209, 150, 150));
+            padding: 4rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
         }
 
-        nav {
+        .site-nav {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
@@ -86,7 +130,7 @@ body {
             text-align: center;
         }
 
-        nav ul {
+        .nav-list {
             list-style: none;
             display: flex;
             justify-content: center;
@@ -94,22 +138,22 @@ body {
             gap: 10px;
         }
 
-        nav ul li a {
+        .nav-link {
             color: black;
             text-decoration: none;
             padding: 8px 16px;
             border-radius: 5px;
             transition: 0.3s;
             font-size: 0.95rem;
+            font-weight: 700;
         }
 
-        nav ul li a:hover {
-            background: rgba(255,255,255,0.2);
+        .nav-link:hover {
+         text-decoration: underline;
         }
 
         /* Pricing Section */
         .pricing-section {
-            background: linear-gradient(180deg,  #d4acac9a);
             padding: 80px 20px;
             min-height: 100vh;
         }
@@ -202,7 +246,7 @@ body {
         }
 
         .price {
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: bold;
             color: #1a1a1a;
         }
@@ -265,7 +309,7 @@ body {
         }
 
         .features-list li {
-            padding: 2px 0;
+            padding: 10px 0;
             color: #555;
             display: flex;
             align-items: flex-start;
@@ -288,15 +332,8 @@ body {
                 grid-template-columns: 1fr;
             }
 
-            nav ul {
+            .nav-list {
                 flex-direction: column;
                 align-items: center;
             }
         }
-.oasis1 {
-    color: #a57d7dee;
-    margin: 20px 0;
-}
-.oasis1:hover {
-    color: #7a4f4f;
-}
