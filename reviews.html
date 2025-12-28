@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Reviews</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209,150,150);
+}
+
+/* ================= TITLE ================= */
+h1{
+    text-align:center;
+    margin:40px 0;
+}
+
+/* ================= CONTAINER ================= */
+.reviews-container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* ================= TOP RATING CARD ================= */
+.overall-rating{
+    background:#ebd2d29a;
+    border-radius:18px;
+    padding:50px 30px;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* ================= LAUREL + RATING ================= */
+.rating-badge{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+
+/* Laurel container */
+.laurel{
+    position:relative;
+    width:50px;
+    height:80px;
+}
+
+/* Individual curled leaves */
+.leaf{
+    position:absolute;
+    width:26px;
+    height:14px;
+    background: linear-gradient(135deg, #f7d98b, #b8860b);
+    border-radius: 100% 0 100% 0;
+}
+
+/* LEFT LAUREL LEAVES */
+.left .leaf:nth-child(1){ top:5px;  left:-14px; transform:rotate(-30deg); }
+.left .leaf:nth-child(2){ top:20px; left:-18px; transform:rotate(-45deg); }
+.left .leaf:nth-child(3){ top:36px; left:-20px; transform:rotate(-60deg); }
+.left .leaf:nth-child(4){ top:50px; left:-16px; transform:rotate(-75deg); }
+.left .leaf:nth-child(5){ top:64px; left:-12px; transform:rotate(-90deg); }
+
+/* RIGHT LAUREL LEAVES */
+.right .leaf:nth-child(1){ top:5px;  right:-14px; transform:rotate(30deg) scaleX(-1); }
+.right .leaf:nth-child(2){ top:20px; right:-18px; transform:rotate(45deg) scaleX(-1); }
+.right .leaf:nth-child(3){ top:36px; right:-20px; transform:rotate(60deg) scaleX(-1); }
+.right .leaf:nth-child(4){ top:50px; right:-16px; transform:rotate(75deg) scaleX(-1); }
+.right .leaf:nth-child(5){ top:64px; right:-12px; transform:rotate(90deg) scaleX(-1); }
+
+/* Rating number */
+.rating-number{
+    font-size:56px;
+    font-weight:700;
+}
+
+/* ================= TEXT ================= */
+.guest-fav{
+    font-weight:bold;
+    margin-top:12px;
+}
+
+.rating-desc{
+    max-width:600px;
+    margin:10px auto 40px;
+    color:#333;
+}
+
+/* ================= BREAKDOWN ================= */
+.rating-breakdown{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:25px;
+}
+
+.rating-item{
+    text-align:center;
+    font-size:14px;
+}
+
+.rating-item strong{
+    display:block;
+    font-size:18px;
+    margin:6px 0;
+}
+
+.rating-item .icon{
+    font-size:22px;
+    color:white;
+}
+
+/* ================= REVIEWS GRID ================= */
+.reviews-grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:28px;
+}
+
+.review-card{
+    display:flex;
+    gap:18px;
+    background:#ebd2d29a;
+    padding:22px;
+    border-radius:16px;
+    align-items:flex-start;
+}
+
+.reviewer-img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.review-content h3{
+    margin:0;
+}
+
+.review-date{
+    font-size:13px;
+    color:#444;
+}
+
+.review-stars{
+    color:#f5a623;
+    margin:6px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+    .rating-breakdown{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reviews-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Customer Reviews</h1>
+
+<div class="reviews-container">
+
+<!-- ===== TOP RATING ===== -->
+<div class="overall-rating">
+
+    <div class="rating-badge">
+
+        <!-- LEFT CURLY LAUREL -->
+        <div class="laurel left">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+
+        <!-- RATING -->
+        <div class="rating-number">5.0</div>
+
+        <!-- RIGHT CURLY LAUREL -->
+        <div class="laurel right">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+
+    </div>
+
+    <div class="guest-fav">Guest favorite</div>
+
+    <div class="rating-desc">
+        This home is in the top 10% of eligible listings based on ratings,
+        reviews, and reliability.
+    </div>
+
+    <div class="rating-breakdown">
+        <div class="rating-item">Overall rating<strong>5.0</strong><span class="icon">⭐</span></div>
+        <div class="rating-item">Cleanliness<strong>5.0</strong><span class="icon">🧼</span></div>
+        <div class="rating-item">Accuracy<strong>5.0</strong><span class="icon">✔️</span></div>
+        <div class="rating-item">Check-in<strong>5.0</strong><span class="icon">🔑</span></div>
+        <div class="rating-item">Communication<strong>5.0</strong><span class="icon">💬</span></div>
+        <div class="rating-item">Location<strong>5.0</strong><span class="icon">📍</span></div>
+        <div class="rating-item">Value<strong>5.0</strong><span class="icon">🏷️</span></div>
+    </div>
+
+</div>
+
+<!-- ===== REVIEWS GRID ===== -->
+<div class="reviews-grid">
+
+    <!-- Review 1 -->
+    <div class="review-card">
+        <img src="all_images/ackland.PNG" alt="" class="reviewer-img">
+        <div class="review-content">
+            <h3>Ackland</h3>
+            <span class="review-date">5 days ago</span>
+            <div class="review-stars">★★★★★</div>
+            <p>It was a pleasure returning to your apartment once more. I extend my sincere gratitude for your exceptional hospitality. Your punctuality in communication and willingness to help.</p>
+        </div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card">
+        <img src="all_images/emma.PNG" alt="" class="reviewer-img">
+        <div class="review-content">
+            <h3>Emmanuel Godliving</h3>
+            <span class="review-date">3 weeks ago</span>
+            <div class="review-stars">★★★★★</div>
+            <p>Becky's place is magnificent,a rare find and great value for money. Becky is very responsive and keen to recommend activities if you want to explore the city.</p>
+        </div>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card">
+        <img src="all_images/winnie.PNG" alt="" class="reviewer-img">
+        <div class="review-content">
+            <h3>Winnie</h3>
+            <span class="review-date">3 weeks ago</span>
+            <div class="review-stars">★★★★★</div>
+            <p>Becky is a very good host,polite, resourceful, and helpful with nearby recommendations. The place is clean and looks exactly like the photos.</p>
+        </div>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="review-card">
+        <img src="all_images/neema.PNG" alt="" class="reviewer-img">
+        <div class="review-content">
+            <h3>Neema</h3>
+            <span class="review-date">4 weeks ago</span>
+            <div class="review-stars">★★★★★</div>
+            <p>The apartment is cozy, well-managed, and beautiful. We had an amazing stay,highly recommend this place for anyone visiting the city.</p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
