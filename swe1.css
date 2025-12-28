@@ -8,6 +8,8 @@ body {
     background-color: #d4acac9a;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
+
+   
 }
 
 .header { 
@@ -107,3 +109,81 @@ body {
     font-size: 20px;
     line-height: 1.5;
 }
+
+.about{
+    padding: 20px;
+}
+
+.about-hero p {
+            font-size: 18px;
+        }
+
+.about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 60px;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+
+.about-text {
+            max-width: 500px;
+        }
+
+.about-text h2 {
+            margin-bottom: 15px;
+            color: #e8a1b0;
+        }
+
+.aboutt p {
+            line-height: 1.7;
+            color: #444;
+            max-width: 700px;
+        }
+
+.values {
+            background: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+.values h2 {
+            color: #e8a1b0;
+            margin-bottom: 30px;
+        }
+
+.value-boxes {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+.value-box {
+            background: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+.aboutbg {
+    background-image: url(all_images/images.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.about-container,
+.values {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+
+
