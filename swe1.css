@@ -1,3 +1,4 @@
+/* --- GLOBAL STYLES --- */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +6,13 @@
 }
 
 body {
-    background-color: #d4acac9a;
+    background-color: #d4acac9a; /* Default fallback color */
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
+/* --- SHARED NAVIGATION BAR --- */
 .header { 
     position: fixed;
     background-color: rgb(209, 150, 150);
@@ -19,13 +22,14 @@ body {
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(221, 148, 148); 
+    z-index: 1000; /* Ensures nav stays on top of everything */
 }
 
 .header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .header nav ul {
@@ -34,6 +38,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 1rem;
+    width: 100%;
 }
 
 .header nav ul li {
@@ -55,22 +60,16 @@ body {
     transform: translateY(-2px);
 }
 
-/* .sign-up {
-    background-color: rgb(235, 169, 169);
-    border-radius: 15px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-} */
-
+/* --- SHARED TYPOGRAPHY --- */
 .home-h1 {
     display: flex;
     justify-content: center;
     font-size: 80px;
     color: #0a0a0a;
-    padding-top: 15%;
+    padding-top: 150px; /* Space for fixed header */
     margin-bottom: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .oasis {
@@ -83,8 +82,10 @@ body {
     justify-content: center;
     color: #0a0a0a;
     font-size: 40px;
+    text-align: center;
 }
 
+/* --- LANDING PAGE SPECIFIC --- */
 .img1 {
     padding: 5%;
 }
@@ -106,4 +107,76 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+}
+
+/* --- FAQ PAGE SPECIFIC --- */
+
+.faq-section {
+    padding-top: 180px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.faq-title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #0a0a0a;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 15px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #a57d7dee;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.faq-question:hover {
+    color: blueviolet; /* Your custom hover color */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.faq-answer p {
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 20px;
+    color: #a57d7dee;
+    transition: transform 0.3s;
+}
+
+.active .icon {
+    transform: rotate(45deg);
+}
+
+.active + .faq-answer {
+    max-height: 300px;
 }
