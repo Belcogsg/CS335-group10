@@ -11,7 +11,7 @@ The application consists of:
 ##Group members
 -Belva (leader): Landing page 
 -Eliud: About Us
--: Gallery
+-Fatma: Gallery
 -Swalha: Services
 -Khadija: Pricing
 -Rebecca: Our Team
@@ -34,8 +34,8 @@ The application consists of:
   |-team.html
   |-faqs.html
   |-reviews.html
-  |-contact.html
-  |-get_started.html
+  |-cont.html
+  |-start.html
 |-swe1.css  #a shared CSS file
 |-all_images  #a shared folder for all our images (if any). Don't keep images separately, keep them in here after cloning the repo and also don't use too many images.
 
