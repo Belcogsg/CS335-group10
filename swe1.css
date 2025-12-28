@@ -8,7 +8,6 @@ body {
     background-color: #d4acac9a;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-
    
 }
 
@@ -547,5 +546,202 @@ button:hover {
 
 .active + .faq-answer {
     max-height: 300px;
+}
+
+
+        /* Pricing Section */
+        .pricing-section {
+            background: linear-gradient(180deg,  #d4acac9a);
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .pricing-header h1 {
+            font-size: 3rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            padding-top: 180px;
+        }
+
+        .pricing-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .pricing-card.individuals {
+            background: linear-gradient(135deg, #ffe8e8 0%, #fff5f5 100%);
+        }
+
+        .pricing-card.teams {
+            background: linear-gradient(135deg, #e3e8ff 0%, #f0f4ff 100%);
+            border: 2px solid #667eea;
+        }
+
+        .pricing-card.enterprise {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f4 100%);
+        }
+
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1a1a;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .price-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .starts-at {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .price-period {
+            font-size: 1rem;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .plan-description {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta-button.primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .cta-button.primary:hover {
+            background: #5568d3;
+            transform: scale(1.02);
+        }
+
+        .cta-button.secondary {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .cta-button.secondary:hover {
+            background: #333;
+        }
+
+        .features-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            padding: 2px 0;
+            color: #555;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-header h1 {
+                font-size: 2rem;
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+.oasis1 {
+    color: #a57d7dee;
+    margin: 20px 0;
+}
+.oasis1:hover {
+    color: #7a4f4f;
 }
 
