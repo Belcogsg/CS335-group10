@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(221, 148, 148); 
+    z-index: 1000;
 }
 
 .header nav {
@@ -32,7 +33,6 @@ body {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
     padding: 1rem;
 }
 
@@ -50,18 +50,9 @@ body {
 }
 
 .header nav ul li a:hover {
-    color: #000;
     text-decoration: underline;
     transform: translateY(-2px);
 }
-
-/* .sign-up {
-    background-color: rgb(235, 169, 169);
-    border-radius: 15px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-} */
 
 .home-h1 {
     display: flex;
@@ -75,7 +66,7 @@ body {
 
 .oasis {
     color: #a57d7dee;
-    margin: 0 20px 0;
+    margin: 0 20px;
 }
 
 .home-h2 {
@@ -101,10 +92,88 @@ body {
 .img1 p {
     margin-top: 1rem;
     padding: 3%;
-    color: #0a0a0a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
 }
 
+/* ===== TEAM PAGE STYLES ===== */
+.team-container-h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: #0a0a0a;
+    padding-top: 15%;
+    margin-bottom: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team {
+    color: #a57d7dee;
+    margin: 0 20px;
+}
+
+.team-container-h2 {
+    display: flex;
+    justify-content: center;
+    color: #0a0a0a;
+    font-size: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 30px;
+}
+
+.team-member {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.role {
+    color: #ff385c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .team-member {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-member {
+        width: 90%;
+    }
+
+    .team-container-h1 {
+        font-size: 50px;
+        padding-top: 20%;
+    }
+
+    .team-container-h2 {
+        font-size: 28px;
+    }
+}
